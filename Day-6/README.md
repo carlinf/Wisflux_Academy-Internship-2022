@@ -31,6 +31,8 @@ console.log(x);
 // Output:
 //   Error
 
+```
+
 ### **3.What is the use of JavaScript in Web Browsers?**
 JavaScript is commonly used for creating web pages. It allows us to add dynamic behavior to the webpage and add special effects to the webpage. On websites, it is mainly used for validation purposes. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors.
 
