@@ -1,73 +1,67 @@
 # Day-6 Assignment 1 
 ## Theory Questions :
+
+
+
+# Week 2 Day1 Assignment 1 
+## Theory Questions :
 <br>
 
 ### **1.What is Javascript ?**
 
-JavaScript or JS is a Programming Language which is one of the core technologies of the World Wide Web, along with HTML and CSS. More than 95% of modern web sites use JavaScript on the client side to provide functionality to the websites that we use everyday
+JavaScript or JS is a Programming Language which is one of the core technologies of the World Wide Web, along with HTML and CSS. More than 95% of modern web sites use JavaScript on the client side to provide functionality to the website.
 
 ### **2.What is the difference between let and var?**
 var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped. It can be said that a variable declared with var is defined throughout the program as compared to let.
-
 ```javascript
 //example of var
 console.log(x);
-var x=10;
+var x=5;
 console.log(x); 
 
 // Output :
 //   Undefined
-//   10
+//   5
 //--------------------------------
 //example of let
 console.log(x);
-let x=10;
+let x=5;
 console.log(x);
 
 // Output:
 //   Error
 
 ### **3.What is the use of JavaScript in Web Browsers?**
-JavaScript is commonly used for creating web pages. 
-It allows us to add dynamic behavior to the webpage and add special effects to the webpage. it is mainly used for validation purposes. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors.
+JavaScript is commonly used for creating web pages. It allows us to add dynamic behavior to the webpage and add special effects to the webpage. On websites, it is mainly used for validation purposes. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors.
 
 ### **4.What are Objects?**
-
-A javaScript object is an entity having state and behavior (properties and method). Everything in javascript is an object. 
-Objects can be created using the Object() constructor.
-
-javascript
+A javaScript object is an entity having state and behavior (properties and method). Everything in javascript is an object. Objects can be created using the Object() constructor.
+```javascript
 //sample object
 const person = {
-  name: "John Duke",
-  age: 54,
+  name: "John Doe",
+  age: 52,
   jobStatus: "Retired",
 };
-
+```
 
 ### **5.What is an Array and how is it different from an Object in JavaScript?**
-
-An array is a special variable, that can hold more than one value. 
-In Programming languages such as C++, Java,etc. Arrays are generally collection of similar types of data. Arrays in JS are also objects.
+An array is a special variable, that can hold more than one value. In Programming languages such as C++, Java,etc. Arrays are generally collection of similar types of data. Arrays in JS are also objects.
 
 * Arrays in JS are resizable and can contain a mix of different data types.
 * JS arrays are not associative arrays.
 * Arrays in JS are zero-indexed.
-
 ```javascript
 const exampleArr = new Array("This", "is", "an", "example");
 ```
 
 ### **6.What is a function?**
-
 A function is a block of code that is designed to perform a specific task. The usage of a function also helps in re-use of code rather than writing it each time we need to use it.
 ```javascript
 function prod(p1, p2) {
   return p1 * p2;   // The function returns the product of p1 and p2
 }
 ```
-
-
 ### **7.How can we implement call by value and call by reference in Javascript?**
 In call by value the original variable is not modified on changes in other variables.
 ```javascript
@@ -90,7 +84,7 @@ var c = { greeting : 'Welcome' };
 var d;
 d = c;
   
-// Mutating the value of a
+// Mutating the value of c
 c.greeting = 'Welcome here';
 console.log(c);
 console.log(d);
@@ -124,7 +118,7 @@ const findArrayAvg = (arr) => {
   return arrSum / arrLen;
 };
 
-const sampleArr = [10, 12, 15, 13, 22, 25, 41, 29, 12];
+const sampleArr = [10, 12, 14, 14, 22, 25, 31, 29, 12];
 console.log(findArrayAvg(sampleArr));
 ```
 
