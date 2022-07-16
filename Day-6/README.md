@@ -1,4 +1,4 @@
-# Week 2 Day1 Assignment 1 
+# Day-6 Assignment 1 
 ## Theory Questions :
 <br>
 
