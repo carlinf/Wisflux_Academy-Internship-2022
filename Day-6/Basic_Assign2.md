@@ -107,7 +107,7 @@ arr.forEach(item => document.getElementById("arrValues").innerText += item)
 const set1 = new Set([1, 2])
 console.log(set1) 
 
-const set2 = new Set(["Hello", "Everybody"])
+const set2 = new Set(["Hello", "World"])
 console.log(set2)
 
 const set3 = new Set([...set1, ...set2])
