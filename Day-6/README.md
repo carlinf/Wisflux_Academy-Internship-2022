@@ -1,4 +1,5 @@
-# Day-6 Assignment 1 
+# Day-6 Assignment 1 Questions
+
 ## Theory Questions :
 <br>
 
