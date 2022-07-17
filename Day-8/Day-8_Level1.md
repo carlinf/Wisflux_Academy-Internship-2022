@@ -124,6 +124,6 @@ function update(index: number, name: string, description: string): Entry {
   return todos[index];
 }
 
-console.log(add("Go to Gym", "Do some wokout"));        // 1
-list();        // 0 - Go to Gym
+console.log(add("Go to Park", "Do some exercise"));        // 1
+list();        // 0 - Go to Park
 ```
