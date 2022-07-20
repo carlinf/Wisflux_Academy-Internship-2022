@@ -39,6 +39,39 @@ The event loop is what ***allows Node. js to perform non-blocking I/O operations
 <p>When Node.js starts, it initializes the event loop, processes the provided input script which may make async API calls, schedule timers, or call process.nextTick(), then begins processing the event loop.</p>
 
 
+_Q4._ What is the use of tsconfig.json file?<br>
+The tsconfig. json file ***specifies the root files and the compiler options required to compile the project.*** JavaScript projects can use a jsconfig. 
+json file instead, which acts almost the same but has some JavaScript-related compiler flags enabled by default.
+
+_Q5._ What are the methods provided by `fs` module to manipulate files?<br>
+<h3>The Node.js fs module</h3>
+* The `fs` module provides a lot of very useful functionality to access and interact with the file system.
+* There is no need to install it. Being part of the Node.js core it can be used by simply requiring it below:
+
+```js
+const fs = require('fs');
+```
+
+
+Methods that the `fs module` includes are here below:
+
+* `fs.access()`: check if the file exists and Node.js can access it with its permissions
+* `fs.appendFile()`: append data to a file. If the file does not exist, it's created
+* `fs.chmod()`: change the permissions of a file specified by the filename passed. Related: `fs.lchmod()`, `fs.fchmod()`
+* `fs.chown()`: change the owner and group of a file specified by the filename passed. Related: `fs.fchown()`, `fs.lchown()`
+* `fs.close()`: close a file descriptor
+* `fs.copyFile()`: copies a file
+* `fs.createReadStream()`: create a readable file stream
+* `fs.createWriteStream()`: create a writable file stream
+* `fs.link()`: create a new hard link to a file
+* `fs.mkdir()`: create a new folder
+* `fs.mkdtemp()`: create a temporary directory
+* `fs.open()`: opens the file and returns a file descriptor to allow file manipulation
+* `fs.readdir()`: read the contents of a directory
+* `fs.readFile()`: read the content of a file. Related: `fs.read()`
+
+
+
 
 
 
