@@ -78,6 +78,206 @@ It is a type of software interface, offering a service to other pieces of softwa
 ![image](https://www.cleveroad.com/images/article-previews/40ca78a7a9db7adfb6bb861fc6b8910ae2ef4bb79f5508007d166f01df5c1038.png)
 
 
+_Q7._ What is JSON format?<br>
+
+JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax.
+<p>It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa). You'll come across it quite often, so in this article we give you all you need to work with JSON using JavaScript, including parsing JSON so you can access data within it, and creating JSON.</p>
+
+```json
+{
+  "squadName": "Super hero squad",
+  "homeTown": "Metro City",
+  "formed": 2016,
+  "secretBase": "Super tower",
+  "active": true,
+  "members": [
+    {
+      "name": "Molecule Man",
+      "age": 29,
+      "secretIdentity": "Dan Jukes",
+      "powers": [
+        "Radiation resistance",
+        "Turning tiny",
+        "Radiation blast"
+      ]
+    },
+    {
+      "name": "Madame Uppercut",
+      "age": 39,
+      "secretIdentity": "Jane Wilson",
+      "powers": [
+        "Million tonne punch",
+        "Damage resistance",
+        "Superhuman reflexes"
+      ]
+    },
+    {
+      "name": "Eternal Flame",
+      "age": 1000000,
+      "secretIdentity": "Unknown",
+      "powers": [
+        "Immortality",
+        "Heat Immunity",
+        "Inferno",
+        "Teleportation",
+        "Interdimensional travel"
+      ]
+    }
+  ]
+}
+```
+
+
+_Q8._ Why we use JSON format for API?<br>
+***JSON allowed APIs to represent structured data in a way that simply was a better fit for the conceptual universe that most developers live in.*** 
+It did not require the rather inconvenient “data binding” and “data serialization” steps that were notoriously difficult when using XML-based APIs.
+
+Here’s an example response from a blog that implements JSON:API:
+
+```json
+{
+  "links": {
+    "self": "http://example.com/articles",
+    "next": "http://example.com/articles?page[offset]=2",
+    "last": "http://example.com/articles?page[offset]=10"
+  },
+  "data": [{
+    "type": "articles",
+    "id": "1",
+    "attributes": {
+      "title": "JSON:API paints my bikeshed!"
+    },
+    "relationships": {
+      "author": {
+        "links": {
+          "self": "http://example.com/articles/1/relationships/author",
+          "related": "http://example.com/articles/1/author"
+        },
+        "data": { "type": "people", "id": "9" }
+      },
+      "comments": {
+        "links": {
+          "self": "http://example.com/articles/1/relationships/comments",
+          "related": "http://example.com/articles/1/comments"
+        },
+        "data": [
+          { "type": "comments", "id": "5" },
+          { "type": "comments", "id": "12" }
+        ]
+      }
+    },
+    "links": {
+      "self": "http://example.com/articles/1"
+    }
+  }],
+  "included": [{
+    "type": "people",
+    "id": "9",
+    "attributes": {
+      "firstName": "Dan",
+      "lastName": "Gebhardt",
+      "twitter": "dgeb"
+    },
+    "links": {
+      "self": "http://example.com/people/9"
+    }
+  }, {
+    "type": "comments",
+    "id": "5",
+    "attributes": {
+      "body": "First!"
+    },
+    "relationships": {
+      "author": {
+        "data": { "type": "people", "id": "2" }
+      }
+    },
+    "links": {
+      "self": "http://example.com/comments/5"
+    }
+  }, {
+    "type": "comments",
+    "id": "12",
+    "attributes": {
+      "body": "I like XML better"
+    },
+    "relationships": {
+      "author": {
+        "data": { "type": "people", "id": "9" }
+      }
+    },
+    "links": {
+      "self": "http://example.com/comments/12"
+    }
+  }]
+}
+
+
+```
+
+_Q9._ What is a Framework?<br>
+**A framework is a structure that you can build software on. 
+It serves as a foundation, so you're not starting entirely from scratch.
+Frameworks are typically associated with a specific programming language and are suited to different types of tasks.**
+
+<h2>Why do we use frameworks?</h2>
+Using frameworks saves time and reduces the risk of errors. 
+You don't need to write everything from the ground up, so there's less chance of introducing errors. Plus, frameworks have already been tested, so there's less to worry about. Other advantages that include:
+
+* More secure code
+* Simpler testing and debugging
+* Avoiding duplicate code
+* Clean and easily adaptable code
+* Able to focus on writing code specific to the project
+* Can be extended
+* Types of frameworks
+* Frameworks can be used for developing websites, mobile applications, data science, and more. Here are some of the more popular frameworks:
+
+**<h3>Web application frameworks</h3>**
+* `AngularJS` is a front-end JavaScript framework. It's one of the most popular web frameworks and is backed by an enthusiastic community.
+
+* `AngularJS` was developed and is supported by Google. It includes features like two-way data binding, which reduces development time, and dependency injections, making it easier for different pieces of code to interact with each other.
+
+* `Django` is an open-source web development framework supported by the Django Software Foundation. It's written in Python, a popular programming language, and is designed to encourage "rapid development and clean, pragmatic design." It's fast, secure, and scalable.
+
+* `Rails` is also an open-source framework. It's written in the Ruby programming language, which was designed for ease of use. Rails is designed to involve less code and less repetition and is supported by a large community. It's been used to develop sites like Airbnb, Twitch, and Hulu.
+
+* `Express` is a back-end framework for Node.js that allows you to start and configure a server with very little overhead. It's free, open-source, and is written in JavaScript. Express has a reputation for being extremely flexible. It's fairly minimalist, and developers have created middleware packages to address web development issues.
+
+**<h3>Mobile development frameworks</h3>**
+* `Flutter` is Google's open-source framework. It supports iOS and Android and has fully customizable widgets.
+
+* `Flutter` is designed to speed up app development and create attractive, user-friendly apps. It uses a thin layer of C/C++ code, but most of its system is in Dart.
+
+* `Xamarin` is a popular .NET-based framework by Microsoft. It also supports iOS and Android and has a community of 60,000 contributors.
+
+* `React Native` was developed by Facebook. It's open-source, cross-platform, and written in JavaScript. It's used in many popular apps, including Discord, Instagram, and Shopify.
+
+* `NativeScript` is an open-source, cross-platform framework. NativeScript apps are built using JavaScript, and it supports other JavaScript frameworks like Angular and Vue. It's popular for its robust back-end support.
+
+* `Ionic` is another open-source, cross-platform framework. It uses JavaScript, HTML, and CSS, and it includes a library of mobile-optimized UI components, gestures, and tools. Ionic builds fast apps and integrates with front-end frameworks like Angular and Vue.
+
+
+_Q10._ How an HTTP Communication works?<br>
+HTTP is a protocol for fetching resources such as HTML documents. 
+It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser.
+
+
+_Q11._ What is Middleware in ExpressJS?<br>
+
+**Middleware** functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle. The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.
+
+Middleware functions can perform the following tasks:
+
+* Execute any code.
+* Make changes to the request and the response objects.
+* End the request-response cycle.
+* Call the next middleware in the stack.
+
+
+
+
+
 
 
 
