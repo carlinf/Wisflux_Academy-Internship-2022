@@ -70,6 +70,12 @@ Methods that the `fs module` includes are here below:
 * `fs.readdir()`: read the contents of a directory
 * `fs.readFile()`: read the content of a file. Related: `fs.read()`
 
+_Q6._ What is API?<br>
+API stands for application programming interface, which is a set of definitions and protocols for building and integrating application software. 
+**or** An application programming interface is a way for two or more computer programs to communicate with each other. 
+It is a type of software interface, offering a service to other pieces of software. A document or standard that describes how to build or use such a connection or interface is called an API specification.
+
+![image](https://www.cleveroad.com/images/article-previews/40ca78a7a9db7adfb6bb861fc6b8910ae2ef4bb79f5508007d166f01df5c1038.png)
 
 
 
