@@ -2,6 +2,11 @@
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/19983092/181263761-b44d7238-699f-466a-92c4-e89f8b00e8d5.png)
+
+
+![image](https://user-images.githubusercontent.com/19983092/181263865-c0123802-0b45-4ccc-a926-78d502f4e3ae.png)
+
 
 
 
