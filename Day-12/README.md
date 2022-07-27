@@ -1,6 +1,6 @@
 # Image-SearchApp-ReactJs
 
-##Screenshots
+## Screenshots
 
 
 
